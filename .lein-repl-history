@@ -1,0 +1,91 @@
+(if (= x nill) false)
+(if (= nil nil) false)
+(defn test [x]
+(if (= x nil)
+(false)
+(true))
+)
+(defn testing [x]
+(if (= x nil)
+(false)
+(true))
+)
+(testing x)
+(testing nil)
+(defn testing [x]
+(if (= x nil)
+false
+true))
+(testing 2)
+(abs 1)
+exit
+(abs 2)
+(defn abs [x]
+  ":("
+  (if (> x 12)
+    (if (< x 20)
+      true
+      false)
+    false))
+(abs 2)
+(abs 13)
+(abs 19)
+(abs 20)#
+(abs 20)
+(defn abs [x]
+  ":("
+  (if (> x 0)
+    x
+    -x))
+(defn abs [x]
+  ":("
+  (if (> x 0)
+    x
+(x -2 -2)
+(* -2 -2)
+(* -2 1)
+(* -2 -1)
+(/ 2 1)
+(defn fizzbuzz [n]
+  ":("
+  (cond 
+    (= (mod n 3) 0) "fizz"
+    (= (mod n 5) 0) "buzz"
+    (= (mod n 15) 0) "gotcha!"
+    :else ""))
+(fizzbuzz 45)
+(defn generic-doublificate [x]
+  ":("
+  (cond
+    (empty? x) nil
+    (number? x) (* x 2)
+    (or (list? x) (vector? x)) (count x)
+    :else true))
+(generic-doublificate 2)
+(generic_doublificate 2)
+(defn generic-doublificate [x]
+  ":("
+  (cond
+    (empty? x) nil
+    (number? x) (* x 2)
+    (or (list? x) (vector? x)) (count x)
+    :else true))
+(generic-doublificate 2)
+(defn generic-doublificate [x]
+  ":("
+  (cond
+    (number? x) (* x 2)
+    (empty? x) nil
+    (or (list? x) (vector? x)) (count x)
+    :else true))
+(defn generic-doublificate [x]
+  ":("
+  (cond
+    (number? x) (* x 2)
+    (empty? x) nil
+    (or (list? x) (vector? x)) (count x)
+    :else true))
+(generic-doublificate 2)
+(generic-doublificate [2])
+(generic-doublificate [2 2])
+(generic-doublificate '(2 2))
